@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Appointment - Hair Day</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="artboard2.png" alt="logo">
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="tutorials.html">Tutorials</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+        </ul>
+    </nav>
+
+    <main class="centered-content">
+        <h1>Book Your Appointment</h1>
+        <p>We accept a limited number of appointments for coloring each week, so book early to reserve your spot!</p>
+
+        <form class="booking-form" action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="">-- Please choose one --</option>
+                <option value="cut">Cut & Style</option>
+                <option value="color">Coloring</option>
+                <option value="makeup">Makeup</option>
+                <option value="nails">Nail Service</option>
+            </select>
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="message">Additional Notes:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Any preferences or special requests..."></textarea>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="artboard1.png" alt="small logo">
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2025 Hair Day. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
